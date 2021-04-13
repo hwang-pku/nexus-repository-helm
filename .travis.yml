@@ -1,3 +1,9 @@
 language: java
 jdk:
 - openjdk8
+
+job:
+  include:
+    - stage: "Tests"
+      name: "NonDex Tests"
+      script: mvn nondex:nondex
