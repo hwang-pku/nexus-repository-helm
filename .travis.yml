@@ -9,4 +9,4 @@ job:
       name: "Test"
       script: mvn test
     - name: "NonDex Tests"
-      script: mvn nondex:nondex
+      script: mvn nondex:debug
