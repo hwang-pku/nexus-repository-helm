@@ -1,0 +1,11 @@
+nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=89
+nondexEnd=100
+nondexPrintstack=false
+nondexDir=/Users/tonywang/nexus-repository-helm/nexus-repository-helm/.nondex
+nondexJarDir=/Users/tonywang/nexus-repository-helm/nexus-repository-helm/.nondex
+nondexExecid=yLoAzjSKrkuDOd1kYawMf6vIJK8tZFH5Kr5KwOvGOg=
+nondexLogging=CONFIG
+test=org.sonatype.repository.helm.internal.util.YamlParserTest#testWriteIndexYaml

@@ -37,6 +37,7 @@ import static org.hamcrest.CoreMatchers.notNullValue;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class YamlParserTest
     extends TestSupport
@@ -67,15 +68,29 @@ public class YamlParserTest
 
   @Test
   public void testWriteIndexYaml() throws Exception {
-    InputStream expected = getClass().getResourceAsStream("indexresult.yaml");
-    StringWriter writer = new StringWriter();
-    IOUtils.copy(expected, writer);
-    String expectedResult = writer.toString();
-    OutputStream os = new ByteArrayOutputStream();
-    underTest.write(os, createChartIndex());
+    String perms[]={"012", "021", "120", "102", "210", "201"};
+    InputStream expected[] = {getClass().getResourceAsStream("indexresult1.yaml"), getClass().getResourceAsStream("indexresult2.yaml"), getClass().getResourceAsStream("indexresult3.yaml")};
+    StringWriter writer[] = {new StringWriter(), new StringWriter(), new StringWriter()};
+    IOUtils.copy(expected[0], writer[0]);
+    IOUtils.copy(expected[1], writer[1]);
+    IOUtils.copy(expected[2], writer[2]);
+    String expectedResult[] = {writer[0].toString(), writer[1].toString(), writer[2].toString()};
+    boolean pass=false;
+    
+    for(int i=0;i<6;i++)
+    {
+      OutputStream os = new ByteArrayOutputStream();
+      underTest.write(os, createChartIndex(perms[i]));
 
-    assertThat(os, is(notNullValue()));
-    assertEquals(StringUtils.normalizeSpace(os.toString()), StringUtils.normalizeSpace(expectedResult));
+      assertThat(os, is(notNullValue()));
+      for(int j=0;j<3;j++){
+        if(expectedResult[j].equals(os.toString())){
+          pass=true;
+        }
+      }
+      assertEquals(StringUtils.normalizeSpace(os.toString()), StringUtils.normalizeSpace(expectedResult[1]));
+    }
+    //assertTrue(pass);
   }
 
   private List<String> getKeywords() {
@@ -105,10 +120,13 @@ public class YamlParserTest
   }
 
   private ChartIndex createChartIndex() {
+    return createChartIndex("012");
+  }
+
+  private ChartIndex createChartIndex(String perm){
     ChartIndex chartIndex = new ChartIndex();
     chartIndex.setApiVersion("1.0");
-
-    chartIndex.addEntry(createChartEntry(
+    ChartEntry entry[]={createChartEntry(
         "NoSQL document-oriented database that stores JSON-like documents with\n" +
             "  dynamic schemas, simplifying the integration of data in content-driven applications.",
         "mongodb",
@@ -120,9 +138,7 @@ public class YamlParserTest
         HelmListTestHelper.getUrlList(),
         HelmListTestHelper.getSourcesList(),
         HelmListTestHelper.getMaintainersList()
-    ));
-
-    chartIndex.addEntry(createChartEntry(
+    ), createChartEntry(
         "NoSQL document-oriented database that stores JSON-like documents with\n" +
             "  dynamic schemas, simplifying the integration of data in content-driven applications.",
         "mongodb",
@@ -134,22 +150,23 @@ public class YamlParserTest
         HelmListTestHelper.getUrlList(),
         HelmListTestHelper.getSourcesList(),
         HelmListTestHelper.getMaintainersList()
-    ));
-
-    chartIndex.addEntry(createChartEntry(
+    ), createChartEntry(
         "NoSQL document-oriented database that stores JSON-like documents with\n" +
             "  dynamic schemas, simplifying the integration of data in content-driven applications.",
-        "notmongdb",
-        "1.0.0",
+        "mongodb",
+        "0.4.8",
         DateTime.parse("2018-08-13T22:05:33.023Z"),
-        "0.0.1",
+        "0.0.2",
         "12345",
         "https://bitnami.com/assets/stacks/mongodb/img/mongodb-stack-220x234.png",
         HelmListTestHelper.getUrlList(),
         HelmListTestHelper.getSourcesList(),
         HelmListTestHelper.getMaintainersList()
-    ));
-
+    )};
+    assertEquals(entry.length, perm.length());
+    for(int i=0; i<3; i++){
+      chartIndex.addEntry(entry[Character.getNumericValue(perm.charAt(i))]);
+    }
     return chartIndex;
   }
 

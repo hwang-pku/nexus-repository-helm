@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.sonatype.repository.helm.internal.HelmRecipeTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.259 s - in org.sonatype.repository.helm.internal.HelmRecipeTest

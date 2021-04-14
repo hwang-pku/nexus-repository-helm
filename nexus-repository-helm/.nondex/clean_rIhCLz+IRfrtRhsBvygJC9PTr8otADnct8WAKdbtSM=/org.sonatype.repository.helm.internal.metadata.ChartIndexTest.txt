@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: org.sonatype.repository.helm.internal.metadata.ChartIndexTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.001 s <<< FAILURE! - in org.sonatype.repository.helm.internal.metadata.ChartIndexTest
+addChartEntry(org.sonatype.repository.helm.internal.metadata.ChartIndexTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+	at org.sonatype.repository.helm.internal.metadata.ChartIndexTest.addChartEntry(ChartIndexTest.java:36)
+

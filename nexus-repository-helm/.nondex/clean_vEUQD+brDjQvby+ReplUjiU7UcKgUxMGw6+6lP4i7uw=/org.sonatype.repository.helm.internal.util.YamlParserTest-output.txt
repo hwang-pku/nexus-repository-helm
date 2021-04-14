@@ -1,0 +1,8 @@
+20:34:17.884 INFO [main] org.sonatype.repository.helm.internal.util.YamlParserTest - TEST testWriteIndexYaml STARTING
+{apiVersion=apiVersion of class java.lang.String, entries=entries of interface java.util.Map, generated=generated of class org.joda.time.DateTime}
+{appVersion=appVersion of class java.lang.String, created=created of class org.joda.time.DateTime, description=description of class java.lang.String, digest=digest of class java.lang.String, icon=icon of class java.lang.String, maintainers=maintainers of interface java.util.List, name=name of class java.lang.String, sources=sources of interface java.util.List, urls=urls of interface java.util.List, version=version of class java.lang.String}
+20:34:18.228 INFO [main] org.sonatype.repository.helm.internal.util.YamlParserTest - TEST testWriteIndexYaml SUCCEEDED
+20:34:18.228 INFO [main] org.sonatype.repository.helm.internal.util.YamlParserTest - TEST testWriteIndexYaml FINISHED
+20:34:18.229 INFO [main] org.sonatype.repository.helm.internal.util.YamlParserTest - TEST testParseChartYaml STARTING
+20:34:18.233 INFO [main] org.sonatype.repository.helm.internal.util.YamlParserTest - TEST testParseChartYaml SUCCEEDED
+20:34:18.234 INFO [main] org.sonatype.repository.helm.internal.util.YamlParserTest - TEST testParseChartYaml FINISHED
