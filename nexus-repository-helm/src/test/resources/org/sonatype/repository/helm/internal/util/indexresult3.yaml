@@ -9,8 +9,8 @@ entries:
     digest: '12345'
     icon: https://bitnami.com/assets/stacks/mongodb/img/mongodb-stack-220x234.png
     maintainers:
-    - email: containers@bitnami.com
-      name: Bitnami
+    - name: Bitnami
+      email: containers@bitnami.com
     name: notmongdb
     sources:
     - https://github.com/bitnami/bitnami-docker-mongodb

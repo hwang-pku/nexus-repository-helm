@@ -72,7 +72,7 @@ public class YamlParserTest
     underTest.write(os, createChartIndex());
     assertThat(os, is(notNullValue()));
     boolean flag=false;
-    for(int i=1;i<=6;i++) {
+    for(int i=0;i<=15;i++) {
       InputStream expected = getClass().getResourceAsStream("indexresult" + String.valueOf(i) + ".yaml");
       StringWriter writer = new StringWriter();
       IOUtils.copy(expected, writer);
