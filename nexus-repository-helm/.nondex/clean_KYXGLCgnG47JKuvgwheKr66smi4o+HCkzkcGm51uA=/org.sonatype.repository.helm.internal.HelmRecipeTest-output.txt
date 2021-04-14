@@ -1,0 +1,12 @@
+01:01:13.335 INFO [main] org.sonatype.repository.helm.internal.HelmRecipeTest - TEST haEnabledProxyRepository STARTING
+01:01:13.623 INFO [main] org.sonatype.repository.helm.internal.HelmRecipeTest - TEST haEnabledProxyRepository SUCCEEDED
+01:01:13.623 INFO [main] org.sonatype.repository.helm.internal.HelmRecipeTest - TEST haEnabledProxyRepository FINISHED
+01:01:13.623 INFO [main] org.sonatype.repository.helm.internal.HelmRecipeTest - TEST haDisabledHostedRepository STARTING
+01:01:13.624 INFO [main] org.sonatype.repository.helm.internal.HelmRecipeTest - TEST haDisabledHostedRepository SUCCEEDED
+01:01:13.624 INFO [main] org.sonatype.repository.helm.internal.HelmRecipeTest - TEST haDisabledHostedRepository FINISHED
+01:01:13.624 INFO [main] org.sonatype.repository.helm.internal.HelmRecipeTest - TEST haDisabledProxyRepository STARTING
+01:01:13.625 INFO [main] org.sonatype.repository.helm.internal.HelmRecipeTest - TEST haDisabledProxyRepository SUCCEEDED
+01:01:13.625 INFO [main] org.sonatype.repository.helm.internal.HelmRecipeTest - TEST haDisabledProxyRepository FINISHED
+01:01:13.625 INFO [main] org.sonatype.repository.helm.internal.HelmRecipeTest - TEST haEnabledHostedRepository STARTING
+01:01:13.626 INFO [main] org.sonatype.repository.helm.internal.HelmRecipeTest - TEST haEnabledHostedRepository SUCCEEDED
+01:01:13.626 INFO [main] org.sonatype.repository.helm.internal.HelmRecipeTest - TEST haEnabledHostedRepository FINISHED
