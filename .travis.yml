@@ -5,8 +5,5 @@ jdk:
 
 job:
   include:
-    - stage: "Tests"
-      name: "Test"
-      script: mvn test
     - name: "NonDex Tests"
       script: mvn nondex:nondex
