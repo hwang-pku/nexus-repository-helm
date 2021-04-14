@@ -1,0 +1,3 @@
+10:42:08.258 INFO [main] org.sonatype.repository.helm.internal.util.HelmAttributeParserTest - TEST testGetAttributesFromChart STARTING
+10:42:08.277 INFO [main] org.sonatype.repository.helm.internal.util.HelmAttributeParserTest - TEST testGetAttributesFromChart SUCCEEDED
+10:42:08.277 INFO [main] org.sonatype.repository.helm.internal.util.HelmAttributeParserTest - TEST testGetAttributesFromChart FINISHED

@@ -1,0 +1,6 @@
+11:37:03.953 INFO [main] org.sonatype.repository.helm.internal.orient.metadata.IndexYamlBuilderTest - TEST testTempBlobReturned STARTING
+11:37:03.957 INFO [main] org.sonatype.repository.helm.internal.orient.metadata.IndexYamlBuilderTest - TEST testTempBlobReturned SUCCEEDED
+11:37:03.958 INFO [main] org.sonatype.repository.helm.internal.orient.metadata.IndexYamlBuilderTest - TEST testTempBlobReturned FINISHED
+11:37:03.958 INFO [main] org.sonatype.repository.helm.internal.orient.metadata.IndexYamlBuilderTest - TEST testChartIndexPassedCorrectly STARTING
+11:37:03.964 INFO [main] org.sonatype.repository.helm.internal.orient.metadata.IndexYamlBuilderTest - TEST testChartIndexPassedCorrectly SUCCEEDED
+11:37:03.964 INFO [main] org.sonatype.repository.helm.internal.orient.metadata.IndexYamlBuilderTest - TEST testChartIndexPassedCorrectly FINISHED

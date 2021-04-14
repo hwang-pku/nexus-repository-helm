@@ -1,0 +1,6 @@
+10:55:49.026 INFO [main] org.sonatype.repository.helm.internal.content.createindex.CreateIndexServiceImplTest - TEST testBuildIndexYaml STARTING
+10:55:49.042 INFO [main] org.sonatype.repository.helm.internal.content.createindex.CreateIndexServiceImplTest - TEST testBuildIndexYaml SUCCEEDED
+10:55:49.042 INFO [main] org.sonatype.repository.helm.internal.content.createindex.CreateIndexServiceImplTest - TEST testBuildIndexYaml FINISHED
+10:55:49.043 INFO [main] org.sonatype.repository.helm.internal.content.createindex.CreateIndexServiceImplTest - TEST testIndexYamlBuiltEvenWhenNoAssets STARTING
+10:55:49.045 INFO [main] org.sonatype.repository.helm.internal.content.createindex.CreateIndexServiceImplTest - TEST testIndexYamlBuiltEvenWhenNoAssets SUCCEEDED
+10:55:49.045 INFO [main] org.sonatype.repository.helm.internal.content.createindex.CreateIndexServiceImplTest - TEST testIndexYamlBuiltEvenWhenNoAssets FINISHED

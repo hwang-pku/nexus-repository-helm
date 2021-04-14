@@ -32,6 +32,8 @@ import org.joda.time.DateTime;
 import org.junit.Before;
 import org.junit.Test;
 
+import org.yaml.snakeyaml.Yaml;
+
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.notNullValue;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -76,8 +78,25 @@ public class YamlParserTest
     IOUtils.copy(expected[2], writer[2]);
     String expectedResult[] = {writer[0].toString(), writer[1].toString(), writer[2].toString()};
     boolean pass=false;
+    Yaml yaml=new Yaml();
+    ChartIndex expect=yaml.loadAs(writer[0].toString(), ChartIndex.class);
+    OutputStream os = new ByteArrayOutputStream();
+    underTest.write(os, createChartIndex());
+    ChartIndex result=yaml.loadAs(os.toString(), ChartIndex.class);
+    assertThat(result, is(notNullValue()));
+    assertThat(expect, is(notNullValue()));
+    //assertTrue("expected "+expect.getApiVersion().toString()+" but was "+result.getApiVersion().toString(), expect.getApiVersion()==result.getApiVersion());
+    //assertTrue("expected "+expect.getGenerated().toString()+" but was "+result.getGenerated().toString(), expect.getGenerated()==result.getGenerated());
+    //assertTrue("expected "+expect.getEntries().toString()+" but was "+result.getEntries().toString(), expect.getEntries().equals(result.getEntries()));
+    //try{
+    assertTrue(expect.equals(result));
+    /*}catch(Exception e){
+      if(expect.getApiVersion()!=result.getApiVersion()) throw new SecurityException("expected "+expect.getApiVersion()+" but was "+result.getApiVersion());
+      if(expect.getGenerated()!=result.getGenerated()) throw new SecurityException("expected "+expect.getGenerated()+" but was "+result.getGenerated());
+      if(!expect.getEntries().equals(result.getEntries())) throw new SecurityException("expected "+expect.getEntries()+" but was "+result.getEntries());
+    }*/
     
-    for(int i=0;i<6;i++)
+    /*for(int i=0;i<6;i++)
     {
       OutputStream os = new ByteArrayOutputStream();
       underTest.write(os, createChartIndex(perms[i]));
@@ -88,8 +107,8 @@ public class YamlParserTest
           pass=true;
         }
       }
-      assertEquals(StringUtils.normalizeSpace(os.toString()), StringUtils.normalizeSpace(expectedResult[1]));
-    }
+      //assertEquals(StringUtils.normalizeSpace(os.toString()), StringUtils.normalizeSpace(expectedResult[2]));
+    }*/
     //assertTrue(pass);
   }
 

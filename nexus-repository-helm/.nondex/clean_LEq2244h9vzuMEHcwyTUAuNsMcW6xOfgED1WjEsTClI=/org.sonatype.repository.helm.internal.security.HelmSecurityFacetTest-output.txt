@@ -1,0 +1,6 @@
+11:27:37.050 INFO [main] org.sonatype.repository.helm.internal.security.HelmSecurityFacetTest - TEST testEnsurePermitted_notPermitted STARTING
+11:27:37.098 INFO [main] org.sonatype.repository.helm.internal.security.HelmSecurityFacetTest - TEST testEnsurePermitted_notPermitted SUCCEEDED
+11:27:37.099 INFO [main] org.sonatype.repository.helm.internal.security.HelmSecurityFacetTest - TEST testEnsurePermitted_notPermitted FINISHED
+11:27:37.099 INFO [main] org.sonatype.repository.helm.internal.security.HelmSecurityFacetTest - TEST testEnsurePermitted_permitted STARTING
+11:27:37.100 INFO [main] org.sonatype.repository.helm.internal.security.HelmSecurityFacetTest - TEST testEnsurePermitted_permitted SUCCEEDED
+11:27:37.100 INFO [main] org.sonatype.repository.helm.internal.security.HelmSecurityFacetTest - TEST testEnsurePermitted_permitted FINISHED

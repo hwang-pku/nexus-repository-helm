@@ -14,6 +14,8 @@ package org.sonatype.repository.helm.internal.metadata;
 
 import java.util.List;
 import java.util.Map;
+import java.util.HashSet;
+import java.util.HashMap;
 
 import org.joda.time.DateTime;
 
@@ -110,4 +112,33 @@ public class ChartEntry
   public void setMaintainers(final List<Map<String, String>> maintainers) {
     this.maintainers = maintainers;
   }
+  
+  @Override
+  public boolean equals(Object o){
+    if(o==this){
+      return true;
+    }
+    if(!(o instanceof ChartEntry)){
+      return false;
+    }
+    ChartEntry c= (ChartEntry) o;
+    if(!name.equals(c.getName())||!version.equals(c.getVersion())||!created.equals(c.getCreated())||!appVersion.equals(c.getAppVersion())||!digest.equals(c.getDigest())||!icon.equals(c.getIcon())) return false;
+    if(!(new HashSet<String>(urls).equals(new HashSet<String>(c.getUrls())))) return false;
+    if(!(new HashSet<String>(sources).equals(new HashSet<String>(c.getSources())))) return false;
+    if(!(new HashSet<Map<String, String>>(maintainers).equals(new HashSet<Map<String, String>>(c.getMaintainers())))) return false;
+    return true;
+  }
+
 }
+/*
+private String description;
+  private String name;
+  private String version;
+  private DateTime created;
+  private String appVersion;
+  private String digest;
+  private String icon;
+  private List<String> urls;
+  private List<String> sources;
+  private List<Map<String, String>> maintainers;
+  */

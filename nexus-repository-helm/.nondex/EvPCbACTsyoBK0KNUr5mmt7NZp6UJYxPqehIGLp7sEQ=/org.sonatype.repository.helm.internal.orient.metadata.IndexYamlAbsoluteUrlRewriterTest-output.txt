@@ -1,0 +1,12 @@
+11:34:05.896 INFO [main] org.sonatype.repository.helm.internal.orient.metadata.IndexYamlAbsoluteUrlRewriterTest - TEST doNotModifyUrlsWhenAlreadyRelative STARTING
+11:34:05.929 INFO [main] org.sonatype.repository.helm.internal.orient.metadata.IndexYamlAbsoluteUrlRewriterTest - TEST doNotModifyUrlsWhenAlreadyRelative SUCCEEDED
+11:34:05.929 INFO [main] org.sonatype.repository.helm.internal.orient.metadata.IndexYamlAbsoluteUrlRewriterTest - TEST doNotModifyUrlsWhenAlreadyRelative FINISHED
+11:34:05.930 INFO [main] org.sonatype.repository.helm.internal.orient.metadata.IndexYamlAbsoluteUrlRewriterTest - TEST checkCustomUrls STARTING
+11:34:07.175 INFO [main] org.sonatype.repository.helm.internal.orient.metadata.IndexYamlAbsoluteUrlRewriterTest - TEST checkCustomUrls SUCCEEDED
+11:34:07.175 INFO [main] org.sonatype.repository.helm.internal.orient.metadata.IndexYamlAbsoluteUrlRewriterTest - TEST checkCustomUrls FINISHED
+11:34:07.175 INFO [main] org.sonatype.repository.helm.internal.orient.metadata.IndexYamlAbsoluteUrlRewriterTest - TEST ensureNoExclamationMarksInYaml STARTING
+11:34:07.338 INFO [main] org.sonatype.repository.helm.internal.orient.metadata.IndexYamlAbsoluteUrlRewriterTest - TEST ensureNoExclamationMarksInYaml SUCCEEDED
+11:34:07.338 INFO [main] org.sonatype.repository.helm.internal.orient.metadata.IndexYamlAbsoluteUrlRewriterTest - TEST ensureNoExclamationMarksInYaml FINISHED
+11:34:07.338 INFO [main] org.sonatype.repository.helm.internal.orient.metadata.IndexYamlAbsoluteUrlRewriterTest - TEST removeUrlsFromIndexYaml STARTING
+11:34:08.105 INFO [main] org.sonatype.repository.helm.internal.orient.metadata.IndexYamlAbsoluteUrlRewriterTest - TEST removeUrlsFromIndexYaml SUCCEEDED
+11:34:08.105 INFO [main] org.sonatype.repository.helm.internal.orient.metadata.IndexYamlAbsoluteUrlRewriterTest - TEST removeUrlsFromIndexYaml FINISHED

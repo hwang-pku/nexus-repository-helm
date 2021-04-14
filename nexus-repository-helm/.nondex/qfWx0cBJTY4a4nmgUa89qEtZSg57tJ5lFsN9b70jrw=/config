@@ -1,0 +1,11 @@
+nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/Users/tonywang/nexus-repository-helm/nexus-repository-helm/.nondex
+nondexJarDir=/Users/tonywang/nexus-repository-helm/nexus-repository-helm/.nondex
+nondexExecid=qfWx0cBJTY4a4nmgUa89qEtZSg57tJ5lFsN9b70jrw=
+nondexLogging=CONFIG
+test=

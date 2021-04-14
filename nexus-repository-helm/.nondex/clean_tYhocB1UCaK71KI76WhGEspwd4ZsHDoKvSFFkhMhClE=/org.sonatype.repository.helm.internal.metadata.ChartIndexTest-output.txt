@@ -1,0 +1,6 @@
+11:36:35.756 INFO [main] org.sonatype.repository.helm.internal.metadata.ChartIndexTest - TEST addMultipleChartEntries STARTING
+11:36:35.756 INFO [main] org.sonatype.repository.helm.internal.metadata.ChartIndexTest - TEST addMultipleChartEntries SUCCEEDED
+11:36:35.756 INFO [main] org.sonatype.repository.helm.internal.metadata.ChartIndexTest - TEST addMultipleChartEntries FINISHED
+11:36:35.756 INFO [main] org.sonatype.repository.helm.internal.metadata.ChartIndexTest - TEST addChartEntry STARTING
+11:36:35.756 INFO [main] org.sonatype.repository.helm.internal.metadata.ChartIndexTest - TEST addChartEntry SUCCEEDED
+11:36:35.756 INFO [main] org.sonatype.repository.helm.internal.metadata.ChartIndexTest - TEST addChartEntry FINISHED

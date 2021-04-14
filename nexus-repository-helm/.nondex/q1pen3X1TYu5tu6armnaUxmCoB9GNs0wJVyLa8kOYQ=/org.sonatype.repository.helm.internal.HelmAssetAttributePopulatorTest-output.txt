@@ -1,0 +1,3 @@
+11:36:44.135 INFO [main] org.sonatype.repository.helm.internal.HelmAssetAttributePopulatorTest - TEST testPopulateNestedAttributesMapFromHelmAttributes STARTING
+11:36:44.136 INFO [main] org.sonatype.repository.helm.internal.HelmAssetAttributePopulatorTest - TEST testPopulateNestedAttributesMapFromHelmAttributes SUCCEEDED
+11:36:44.137 INFO [main] org.sonatype.repository.helm.internal.HelmAssetAttributePopulatorTest - TEST testPopulateNestedAttributesMapFromHelmAttributes FINISHED

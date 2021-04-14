@@ -1,0 +1,3 @@
+11:15:11.431 INFO [main] org.sonatype.repository.helm.internal.orient.ComponentDirectorTest - TEST allowMoveTest STARTING
+11:15:11.444 INFO [main] org.sonatype.repository.helm.internal.orient.ComponentDirectorTest - TEST allowMoveTest SUCCEEDED
+11:15:11.444 INFO [main] org.sonatype.repository.helm.internal.orient.ComponentDirectorTest - TEST allowMoveTest FINISHED

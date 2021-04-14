@@ -16,6 +16,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.HashSet;
 
 import org.joda.time.DateTime;
 
@@ -31,6 +32,8 @@ public final class ChartIndex
   private DateTime generated;
 
   public ChartIndex() {
+    this.apiVersion=new String();
+    this.generated=new DateTime();
     this.entries = new HashMap<>();
   }
 
@@ -58,5 +61,30 @@ public final class ChartIndex
 
   public void setGenerated(final DateTime generated) {
     this.generated = generated;
+  }
+
+  @Override
+  public boolean equals(Object o){
+    if(o==this){
+      return true;
+    }
+    if(!(o instanceof ChartIndex)){
+      return false;
+    }
+    ChartIndex c= (ChartIndex) o;
+    if(!this.apiVersion.equals(c.getApiVersion()) || !this.generated.equals(c.getGenerated())) {
+      return false;
+    }
+    for(String key: entries.keySet()){
+        try{
+          if(!entries.get(key).equals(c.getEntries().get(key))) {
+            return false;
+          }
+        }
+        catch(Exception e){
+          return false;
+        }
+    }
+    return true;
   }
 }

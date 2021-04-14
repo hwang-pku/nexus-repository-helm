@@ -1,0 +1,3 @@
+11:16:05.554 INFO [main] org.sonatype.repository.helm.internal.util.HelmPathUtilsTest - TEST filename STARTING
+11:16:05.619 INFO [main] org.sonatype.repository.helm.internal.util.HelmPathUtilsTest - TEST filename SUCCEEDED
+11:16:05.620 INFO [main] org.sonatype.repository.helm.internal.util.HelmPathUtilsTest - TEST filename FINISHED

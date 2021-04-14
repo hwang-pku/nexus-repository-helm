@@ -1,0 +1,6 @@
+10:40:24.588 INFO [main] org.sonatype.repository.helm.internal.util.TgzParserTest - TEST getYamlFromTgzTestCustomArchive STARTING
+10:40:24.591 INFO [main] org.sonatype.repository.helm.internal.util.TgzParserTest - TEST getYamlFromTgzTestCustomArchive SUCCEEDED
+10:40:24.592 INFO [main] org.sonatype.repository.helm.internal.util.TgzParserTest - TEST getYamlFromTgzTestCustomArchive FINISHED
+10:40:24.592 INFO [main] org.sonatype.repository.helm.internal.util.TgzParserTest - TEST chartNotFound STARTING
+10:40:24.595 INFO [main] org.sonatype.repository.helm.internal.util.TgzParserTest - TEST chartNotFound SUCCEEDED
+10:40:24.595 INFO [main] org.sonatype.repository.helm.internal.util.TgzParserTest - TEST chartNotFound FINISHED

@@ -1,0 +1,21 @@
+-------------------------------------------------------------------------------
+Test set: org.sonatype.repository.helm.internal.util.YamlParserTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.269 s <<< FAILURE! - in org.sonatype.repository.helm.internal.util.YamlParserTest
+testWriteIndexYaml(org.sonatype.repository.helm.internal.util.YamlParserTest)  Time elapsed: 0.264 s  <<< ERROR!
+org.yaml.snakeyaml.constructor.ConstructorException: 
+Cannot create property=generated for JavaBean=org.sonatype.repository.helm.internal.metadata.ChartIndex@29f7cefd
+ in 'string', line 1, column 1:
+    apiVersion: '1.0'
+    ^
+Can't construct a java object for scalar tag:yaml.org,2002:timestamp; No String constructor found. Exception=org.joda.time.DateTime.<init>(java.lang.String)
+ in 'string', line 52, column 12:
+    generated: 2021-04-14T03:39:28.440Z
+               ^
+
+	at org.sonatype.repository.helm.internal.util.YamlParserTest.testWriteIndexYaml(YamlParserTest.java:85)
+Caused by: org.yaml.snakeyaml.error.YAMLException: Can't construct a java object for scalar tag:yaml.org,2002:timestamp; No String constructor found. Exception=org.joda.time.DateTime.<init>(java.lang.String)
+	at org.sonatype.repository.helm.internal.util.YamlParserTest.testWriteIndexYaml(YamlParserTest.java:85)
+Caused by: java.lang.NoSuchMethodException: org.joda.time.DateTime.<init>(java.lang.String)
+	at org.sonatype.repository.helm.internal.util.YamlParserTest.testWriteIndexYaml(YamlParserTest.java:85)
+

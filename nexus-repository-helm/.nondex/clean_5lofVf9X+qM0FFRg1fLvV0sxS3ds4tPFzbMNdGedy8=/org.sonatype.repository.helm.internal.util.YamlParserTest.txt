@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: org.sonatype.repository.helm.internal.util.YamlParserTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.257 s <<< FAILURE! - in org.sonatype.repository.helm.internal.util.YamlParserTest
+testWriteIndexYaml(org.sonatype.repository.helm.internal.util.YamlParserTest)  Time elapsed: 0.25 s  <<< ERROR!
+java.lang.NullPointerException
+	at org.sonatype.repository.helm.internal.util.YamlParserTest.testWriteIndexYaml(YamlParserTest.java:86)
+
