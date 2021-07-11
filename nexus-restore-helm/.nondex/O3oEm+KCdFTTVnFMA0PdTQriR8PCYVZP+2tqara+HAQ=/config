@@ -1,0 +1,11 @@
+nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/Users/tonywang/nexus-repository-helm/nexus-restore-helm/.nondex
+nondexJarDir=/Users/tonywang/nexus-repository-helm/nexus-restore-helm/.nondex
+nondexExecid=O3oEm+KCdFTTVnFMA0PdTQriR8PCYVZP+2tqara+HAQ=
+nondexLogging=CONFIG
+test=

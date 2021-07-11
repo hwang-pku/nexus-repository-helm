@@ -1,6 +1,0 @@
-01:01:11.768 INFO [main] org.sonatype.repository.helm.internal.util.YamlParserTest - TEST testWriteIndexYaml STARTING
-01:01:12.089 INFO [main] org.sonatype.repository.helm.internal.util.YamlParserTest - TEST testWriteIndexYaml SUCCEEDED
-01:01:12.089 INFO [main] org.sonatype.repository.helm.internal.util.YamlParserTest - TEST testWriteIndexYaml FINISHED
-01:01:12.090 INFO [main] org.sonatype.repository.helm.internal.util.YamlParserTest - TEST testParseChartYaml STARTING
-01:01:12.111 INFO [main] org.sonatype.repository.helm.internal.util.YamlParserTest - TEST testParseChartYaml SUCCEEDED
-01:01:12.111 INFO [main] org.sonatype.repository.helm.internal.util.YamlParserTest - TEST testParseChartYaml FINISHED

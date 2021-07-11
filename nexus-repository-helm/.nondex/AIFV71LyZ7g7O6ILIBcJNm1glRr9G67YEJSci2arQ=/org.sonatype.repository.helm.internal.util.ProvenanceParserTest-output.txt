@@ -1,3 +1,0 @@
-01:01:18.825 INFO [main] org.sonatype.repository.helm.internal.util.ProvenanceParserTest - TEST parseProv STARTING
-01:01:18.826 INFO [main] org.sonatype.repository.helm.internal.util.ProvenanceParserTest - TEST parseProv SUCCEEDED
-01:01:18.826 INFO [main] org.sonatype.repository.helm.internal.util.ProvenanceParserTest - TEST parseProv FINISHED
