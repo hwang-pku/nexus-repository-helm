@@ -15,6 +15,7 @@ package org.sonatype.repository.helm.internal.metadata;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Collections;
 import java.util.Map;
 
 import org.joda.time.DateTime;
@@ -48,10 +49,14 @@ public final class ChartIndex
 
   public void addEntry(final ChartEntry chartEntry) {
     this.entries.computeIfAbsent(chartEntry.getName(), k -> new ArrayList<>()).add(chartEntry);
+    Collections.sort(this.entries.get(chartEntry.getName()));
   }
 
   public void setEntries(final Map<String, List<ChartEntry>> entries) {
     this.entries = entries;
+    for(String key : entries.keySet()) {
+      Collections.sort(this.entries.get(key));
+    }
   }
 
   public DateTime getGenerated() { return this.generated; }

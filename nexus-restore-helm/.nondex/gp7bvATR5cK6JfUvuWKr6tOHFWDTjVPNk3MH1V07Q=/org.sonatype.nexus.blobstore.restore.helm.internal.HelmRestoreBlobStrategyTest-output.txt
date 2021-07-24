@@ -1,0 +1,25 @@
+08:34:05.905 INFO [main] org.sonatype.nexus.blobstore.restore.helm.internal.HelmRestoreBlobStrategyTest - TEST testPackageIsRestored STARTING
+08:34:06.205 INFO [main] org.sonatype.nexus.blobstore.restore.helm.internal.HelmRestoreBlobStrategy - Restored asset, blob store: test, repository: null, path: src/contrib/mongodb.tgz, blob name: src/contrib/mongodb.tgz, blob id: null
+08:34:06.213 INFO [main] org.sonatype.nexus.blobstore.restore.helm.internal.HelmRestoreBlobStrategyTest - TEST testPackageIsRestored SUCCEEDED
+08:34:06.213 INFO [main] org.sonatype.nexus.blobstore.restore.helm.internal.HelmRestoreBlobStrategyTest - TEST testPackageIsRestored FINISHED
+08:34:06.214 INFO [main] org.sonatype.nexus.blobstore.restore.helm.internal.HelmRestoreBlobStrategyTest - TEST testBlobDataIsCreated STARTING
+08:34:06.223 INFO [main] org.sonatype.nexus.blobstore.restore.helm.internal.HelmRestoreBlobStrategyTest - TEST testBlobDataIsCreated SUCCEEDED
+08:34:06.223 INFO [main] org.sonatype.nexus.blobstore.restore.helm.internal.HelmRestoreBlobStrategyTest - TEST testBlobDataIsCreated FINISHED
+08:34:06.224 INFO [main] org.sonatype.nexus.blobstore.restore.helm.internal.HelmRestoreBlobStrategyTest - TEST testIfBlobDataNameIsEmptyExceptionIsThrown STARTING
+08:34:06.227 INFO [main] org.sonatype.nexus.blobstore.restore.helm.internal.HelmRestoreBlobStrategyTest - TEST testIfBlobDataNameIsEmptyExceptionIsThrown SUCCEEDED
+08:34:06.228 INFO [main] org.sonatype.nexus.blobstore.restore.helm.internal.HelmRestoreBlobStrategyTest - TEST testIfBlobDataNameIsEmptyExceptionIsThrown FINISHED
+08:34:06.228 INFO [main] org.sonatype.nexus.blobstore.restore.helm.internal.HelmRestoreBlobStrategyTest - TEST testAppropriatePathIsReturned STARTING
+08:34:06.232 INFO [main] org.sonatype.nexus.blobstore.restore.helm.internal.HelmRestoreBlobStrategyTest - TEST testAppropriatePathIsReturned SUCCEEDED
+08:34:06.232 INFO [main] org.sonatype.nexus.blobstore.restore.helm.internal.HelmRestoreBlobStrategyTest - TEST testAppropriatePathIsReturned FINISHED
+08:34:06.232 INFO [main] org.sonatype.nexus.blobstore.restore.helm.internal.HelmRestoreBlobStrategyTest - TEST testComponentQuery STARTING
+08:34:06.236 INFO [main] org.sonatype.nexus.blobstore.restore.helm.internal.HelmRestoreBlobStrategyTest - TEST testComponentQuery SUCCEEDED
+08:34:06.236 INFO [main] org.sonatype.nexus.blobstore.restore.helm.internal.HelmRestoreBlobStrategyTest - TEST testComponentQuery FINISHED
+08:34:06.237 INFO [main] org.sonatype.nexus.blobstore.restore.helm.internal.HelmRestoreBlobStrategyTest - TEST testComponentIsRequiredForGz STARTING
+08:34:06.241 INFO [main] org.sonatype.nexus.blobstore.restore.helm.internal.HelmRestoreBlobStrategyTest - TEST testComponentIsRequiredForGz SUCCEEDED
+08:34:06.241 INFO [main] org.sonatype.nexus.blobstore.restore.helm.internal.HelmRestoreBlobStrategyTest - TEST testComponentIsRequiredForGz FINISHED
+08:34:06.241 INFO [main] org.sonatype.nexus.blobstore.restore.helm.internal.HelmRestoreBlobStrategyTest - TEST testRestoreIsSkipIfPackageExists STARTING
+08:34:06.245 INFO [main] org.sonatype.nexus.blobstore.restore.helm.internal.HelmRestoreBlobStrategyTest - TEST testRestoreIsSkipIfPackageExists SUCCEEDED
+08:34:06.245 INFO [main] org.sonatype.nexus.blobstore.restore.helm.internal.HelmRestoreBlobStrategyTest - TEST testRestoreIsSkipIfPackageExists FINISHED
+08:34:06.246 INFO [main] org.sonatype.nexus.blobstore.restore.helm.internal.HelmRestoreBlobStrategyTest - TEST testCorrectHashAlgorithmsAreSupported STARTING
+08:34:06.252 INFO [main] org.sonatype.nexus.blobstore.restore.helm.internal.HelmRestoreBlobStrategyTest - TEST testCorrectHashAlgorithmsAreSupported SUCCEEDED
+08:34:06.252 INFO [main] org.sonatype.nexus.blobstore.restore.helm.internal.HelmRestoreBlobStrategyTest - TEST testCorrectHashAlgorithmsAreSupported FINISHED

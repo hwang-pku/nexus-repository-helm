@@ -1,0 +1,11 @@
+language: java
+
+jdk:
+- openjdk8
+
+job:
+  include:
+    - name: "NonDex Tests"
+      script: mvn nondex:nondex
+    - name: "Debug Source"
+      script: mvn nondex:debug

@@ -36,6 +36,7 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.notNullValue;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
+import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.assertEquals;
 
 public class YamlParserTest
@@ -67,15 +68,23 @@ public class YamlParserTest
 
   @Test
   public void testWriteIndexYaml() throws Exception {
-    InputStream expected = getClass().getResourceAsStream("indexresult.yaml");
-    StringWriter writer = new StringWriter();
-    IOUtils.copy(expected, writer);
-    String expectedResult = writer.toString();
     OutputStream os = new ByteArrayOutputStream();
     underTest.write(os, createChartIndex());
-
     assertThat(os, is(notNullValue()));
-    assertEquals(StringUtils.normalizeSpace(os.toString()), StringUtils.normalizeSpace(expectedResult));
+    boolean flag=false;
+    for(int i=0;i<=15;i++) {
+      InputStream expected = getClass().getResourceAsStream("indexresult" + String.valueOf(i) + ".yaml");
+      StringWriter writer = new StringWriter();
+      IOUtils.copy(expected, writer);
+      String expectedResult = writer.toString();
+      if (StringUtils.normalizeSpace(os.toString()).equals(StringUtils.normalizeSpace(expectedResult))) {
+        flag=true;
+        break;
+      }
+    }
+    assertTrue(StringUtils.normalizeSpace(os.toString()), flag);
+    //flag = StringUtils.normalizeSpace(os.toString()).equals(StringUtils.normalizeSpace(expectedResult)) || StringUtils.normalizeSpace(os.toString()).equals(StringUtils.normalizeSpace(expectedResult2));
+    //assertTrue(flag);
   }
 
   private List<String> getKeywords() {

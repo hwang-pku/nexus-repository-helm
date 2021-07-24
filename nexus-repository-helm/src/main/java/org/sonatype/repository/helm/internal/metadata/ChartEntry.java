@@ -22,7 +22,7 @@ import org.joda.time.DateTime;
  *
  * @since 0.0.2
  */
-public class ChartEntry
+public class ChartEntry implements Comparable<ChartEntry>
 {
   private String description;
   private String name;
@@ -109,5 +109,11 @@ public class ChartEntry
 
   public void setMaintainers(final List<Map<String, String>> maintainers) {
     this.maintainers = maintainers;
+  }
+
+  @Override
+  public int compareTo(ChartEntry o) {
+    if(this.appVersion == null) return 1;
+    return this.appVersion.compareTo(o.getAppVersion());
   }
 }
